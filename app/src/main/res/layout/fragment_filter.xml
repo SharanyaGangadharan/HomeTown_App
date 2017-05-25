@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shara.assignment5.UserListFragment"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true"
+    android:layout_marginTop="0dp">
+
+    <Spinner
+        android:id="@+id/countrySpinner"
+        android:spinnerMode="dropdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="13dp" />
+
+    <Spinner
+        android:id="@+id/stateSpinner"
+        android:spinnerMode="dropdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button3"
+        android:layout_toEndOf="@+id/countrySpinner"
+        android:layout_marginStart="19dp" />
+
+    <Spinner
+        android:id="@+id/yearSpinner"
+        android:spinnerMode="dropdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_alignTop="@+id/stateSpinner"
+        android:layout_toEndOf="@+id/stateSpinner" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/filter"
+        tools:layout_editor_absoluteY="16dp"
+        tools:layout_editor_absoluteX="280dp"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/countrySpinner"
+        android:layout_alignStart="@+id/countrySpinner" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clear"
+        tools:ignore="MissingConstraints,RelativeOverlap"
+        tools:layout_editor_absoluteX="280dp"
+        tools:layout_editor_absoluteY="77dp"
+        android:layout_marginStart="11dp"
+        android:layout_alignBaseline="@+id/button3"
+        android:layout_alignBottom="@+id/button3"
+        android:layout_toEndOf="@+id/button3" />
+
+</RelativeLayout>

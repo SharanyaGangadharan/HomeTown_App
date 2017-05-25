@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LocationListFragment"
+    android:background="@color/white">
+
+    <Spinner
+        android:id="@+id/countrySpinner"
+        android:spinnerMode="dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/lightBlue" />
+
+    <Spinner
+        android:id="@+id/stateSpinner"
+        android:spinnerMode="dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:padding="10dp"
+        android:layout_below="@+id/countrySpinner"
+        android:layout_alignParentStart="true"
+        android:background="@color/lightBlue"
+        android:layout_alignEnd="@+id/countrySpinner" />
+
+    <Button
+        android:id="@+id/done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/done"
+        android:layout_marginEnd="114dp"
+        android:layout_marginTop="71dp"
+        android:onClick="done"
+        android:layout_below="@+id/stateSpinner"
+        android:layout_toStartOf="@+id/cancel" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:layout_marginEnd="179dp"
+        android:onClick="cancel"
+        android:layout_alignTop="@+id/done"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
+

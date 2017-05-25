@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shara.assignment5.NewUserFragment">
+
+    <TextView
+        android:id="@+id/nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nickname"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="40dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/editEmail"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:layout_marginTop="33dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/nickname" />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pwd"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="88dp"
+        android:layout_alignBaseline="@+id/editPwd"
+        android:layout_alignBottom="@+id/editPwd"
+        android:layout_alignStart="@+id/nickname" />
+
+    <TextView
+        android:id="@+id/country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/location"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="144dp"
+        android:layout_alignBaseline="@+id/dispLocation"
+        android:layout_alignBottom="@+id/dispLocation"
+        android:layout_alignStart="@+id/password" />
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/city"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="261dp"
+        android:layout_alignBaseline="@+id/editCity"
+        android:layout_alignBottom="@+id/editCity"
+        android:layout_alignStart="@+id/country" />
+
+    <TextView
+        android:id="@+id/year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/year"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="311dp"
+        android:layout_alignBaseline="@+id/editYear"
+        android:layout_alignBottom="@+id/editYear"
+        android:layout_alignStart="@+id/city" />
+
+    <TextView
+        android:id="@+id/longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/coordinates"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="363dp"
+        android:layout_below="@+id/editYear"
+        android:layout_alignStart="@+id/year"
+        android:layout_marginTop="52dp" />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAllCaps="false"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="LabelFor,RelativeOverlap"
+        android:layout_alignBaseline="@+id/nickname"
+        android:layout_alignBottom="@+id/nickname"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/dispCoordinates" />
+
+    <EditText
+        android:id="@+id/editPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="73dp"
+        android:layout_marginTop="10dp"
+        tools:ignore="LabelFor"
+        android:layout_below="@+id/editName"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/editName" />
+
+    <EditText
+        android:id="@+id/editCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="247dp"
+        tools:ignore="LabelFor,RelativeOverlap"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/selectLocation"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/dispLocation" />
+
+    <EditText
+        android:id="@+id/editYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="296dp"
+        android:layout_below="@+id/editCity"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        tools:ignore="LabelFor"
+        android:layout_alignStart="@+id/editCity" />
+
+    <TextView
+        android:id="@+id/dispLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/location"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/editPwd"
+        android:layout_alignStart="@+id/editPwd" />
+
+    <TextView
+        android:id="@+id/dispCoordinates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/coordinates"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="363dp"
+        android:layout_alignBaseline="@+id/longitude"
+        android:layout_alignBottom="@+id/longitude"
+        android:layout_toEndOf="@+id/longitude"
+        android:layout_marginStart="27dp" />
+
+    <Button
+        android:id="@+id/coordinates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select"
+        android:onClick="setCoordinates"
+        android:layout_alignBaseline="@+id/dispCoordinates"
+        android:layout_alignBottom="@+id/dispCoordinates"
+        android:layout_alignStart="@+id/selectLocation" />
+
+    <Button
+        android:id="@+id/selectLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select"
+        android:onClick="setLocation"
+        android:layout_alignBaseline="@+id/dispLocation"
+        android:layout_alignBottom="@+id/dispLocation"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="13dp" />
+
+    <Button
+        android:id="@+id/post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        tools:layout_editor_absoluteX="262dp"
+        tools:layout_editor_absoluteY="459dp"
+        android:onClick="submit"
+        android:layout_marginTop="72dp"
+        android:layout_below="@+id/coordinates"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:layout_alignBaseline="@+id/email"
+        android:layout_alignBottom="@+id/email"
+        android:layout_alignStart="@+id/editName"
+        android:layout_alignParentEnd="true"
+        tools:ignore="LabelFor" />
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <include
+        layout="@layout/app_bar_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!--FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.example.shara.assignment5.UserListFragment"
+        android:gravity="center"
+        android:id="@+id/fragment_holder1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="wrap_content"
+            android:layout_height="304dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="150dp"
+            android:scrollbars="vertical"
+            android:layout_alignParentEnd="true" />
+    </FrameLayout-->
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_navigation"
+        app:menu="@menu/activity_navigation_drawer" />
+
+    <!--FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.example.shara.assignment5.NavigationActivity"
+        android:gravity="center"
+        android:id="@+id/fragment_holder"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+    </FrameLayout-->
+
+</android.support.v4.widget.DrawerLayout>
